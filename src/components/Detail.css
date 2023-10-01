@@ -1,0 +1,13 @@
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+
+th.category {
+    color:crimson;
+}
+h4.category {
+    color:crimson;
+}
+th {
+    text-align: left;
+}

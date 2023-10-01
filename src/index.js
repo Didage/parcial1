@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Intl from './components/Intl';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import {IntlProvider} from 'react-intl';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+        <IntlProvider locale="en">
+                <Intl/>
+        </IntlProvider>, document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
